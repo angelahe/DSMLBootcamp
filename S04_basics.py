@@ -41,3 +41,11 @@ print(f'nested list: {nest}')
 print(f'accessing inside of nested list: {nest[3]}')
 print(f'accessing list in nested list: {nest[3][2]}')
 print(f'access one element in nested list: {nest[3][2][0]}')
+# string is a list
+z = 'hello'
+print(f'fifth letter of hello is : {z[4]}')
+# string slicing
+s = 'abcdefghijk'
+print(f'from index 0 on of string: {s[0:]}')
+print(f'from start up to but not including index 3: {s[:3]}')
+print(f'first three letters of string: {s[0:3]}')
