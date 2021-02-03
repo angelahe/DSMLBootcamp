@@ -64,3 +64,18 @@ valid = True
 invalid = False
 print(f'valid is {valid} and invalid is {invalid}')
 
+# tuples
+t = (1,2,3)
+# can access tuples like lists
+print(f'2nd element in tuple t is {t[1]}')
+# but tuples are immutable, so this would give an error
+# t[0] = 'NEW'
+
+# sets
+my_set = {1,1,1,2,2,2,3,3,3}
+print(f'my set is unique: {my_set}')
+print(f'unique elements in a list by casting it to a set: {set([1,1,1,1,2,2,2,5,5,5,6,6,6])}')
+# add to a set
+s = {1,2,3}
+s.add(4)
+print(f'set was 1,2,3 and added 4 {s}')
