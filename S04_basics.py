@@ -131,3 +131,13 @@ for i in range(5):
     print(i)
 
 print(f'list(range(5) makes a list: {list(range(5))}')
+
+# list comprehension
+x = [1,2,3,4]
+out = []
+for item in x:
+    out.append(item**2)
+print(f'new list I made: {out}')
+
+print(f'[item**2 for item in x] creates a list like this: {[item**2 for item in x]}')
+
