@@ -79,3 +79,14 @@ print(f'unique elements in a list by casting it to a set: {set([1,1,1,1,2,2,2,5,
 s = {1,2,3}
 s.add(4)
 print(f'set was 1,2,3 and added 4 {s}')
+
+# comparison operators
+print(f'1 > 2 is {1 > 2}')
+print(f'1 < 2 is {1 < 2}')
+print(f'1 >= 2 is {1 >= 2}')
+print(f'1 == 1 is {1 == 1}')
+print(f"'hi' == 'bye' is {'hi' == 'bye'}")
+
+# logic operators
+print(f'(1 > 2) and (2 < 3) is {(1 > 2) and (2 < 3)}')
+print(f'(1 == 2) or (2 == 3) or (4 == 4) is {(1 == 2) or (2 == 3) or (4 == 4)}')
