@@ -119,3 +119,15 @@ for item in seq:
 for jelly in seq:
     print(jelly+jelly)
 
+# while loops
+i = 1
+while i < 5:
+    print(f'i is: {i}')
+    i = i+1
+
+# range
+print(f'range(5) is {range(5)}')
+for i in range(5):
+    print(i)
+
+print(f'list(range(5) makes a list: {list(range(5))}')
