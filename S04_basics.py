@@ -141,3 +141,20 @@ print(f'new list I made: {out}')
 
 print(f'[item**2 for item in x] creates a list like this: {[item**2 for item in x]}')
 
+# functions
+def my_func(param1='default'):
+    """
+    Docstring goes here.
+    """
+    print(param1)
+
+my_func('new param')
+
+my_func(param1='new param')
+
+def square(x):
+    return x**2
+
+out = square(2)
+
+print(f'out = square(2) will return {out}')
