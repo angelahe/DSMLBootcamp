@@ -1,5 +1,8 @@
 # basics of python
-
+"""
+multiline block of
+commented out text
+"""
 # math operations
 print(f'1 + 1 is {1+1}')
 print(f'1 * 3 is {1 * 3}')
@@ -158,3 +161,41 @@ def square(x):
 out = square(2)
 
 print(f'out = square(2) will return {out}')
+
+
+
+# note in jupyter
+# type range
+# then press Shift + tab
+# will give the docstring for it ie
+def times2(var):
+    """
+    this is a docstring
+    and its second line
+    this function squares a number
+    """
+    return var*2
+
+print(f'times2(2) gives us {times2(2)}')
+
+# lambda expressions
+print(lambda var: var*2)
+
+# map and filter
+map_list = list(map(times2, seq))
+print(map_list)
+
+# making a function into a lambda function (anonymous function)
+def times3(var): return var*3
+# this is the lambda for that
+lambda var:var*3
+# then can assign the lambda function to a variable like so
+t = lambda var:var*3
+# then can call it
+m = t(6)
+
+# lambda and map together
+print(list(map(lambda num: num*3, seq)))
+
+# filter out members from a list
+print(f'{list(filter(lambda num: num%2 == 0, seq))}')
