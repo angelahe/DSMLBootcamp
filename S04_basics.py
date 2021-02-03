@@ -49,3 +49,18 @@ s = 'abcdefghijk'
 print(f'from index 0 on of string: {s[0:]}')
 print(f'from start up to but not including index 3: {s[:3]}')
 print(f'first three letters of string: {s[0:3]}')
+
+# dictionaries
+d = {'key1':'item1','key2':'item2'}
+print(f"dictionary d is {d} and access value using a key: {d['key1']}")
+e = {'k1':[1,2,3]}
+print(f"getting list k1 from dictionary e: {e['k1']}")
+print(f"getting 2nd value in the k1 list: {e['k1'][1]}")
+f = {'k1':{'innerkey':[1,2,3]}}
+print(f"get list value from inside nested dictionary{f}: {f['k1']['innerkey'][2]}")
+
+# booleans
+valid = True
+invalid = False
+print(f'valid is {valid} and invalid is {invalid}')
+
