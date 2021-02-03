@@ -90,3 +90,32 @@ print(f"'hi' == 'bye' is {'hi' == 'bye'}")
 # logic operators
 print(f'(1 > 2) and (2 < 3) is {(1 > 2) and (2 < 3)}')
 print(f'(1 == 2) or (2 == 3) or (4 == 4) is {(1 == 2) or (2 == 3) or (4 == 4)}')
+
+# if elif else statements
+if 1 < 2:
+    print('Yep!')
+
+if 1 < 2:
+    print('first')
+else:
+    print('last')
+
+if 1 == 2:
+    print('first')
+elif 3 == 3:
+    print('middle')
+else:
+    print('Last')
+
+# for loops
+seq = [1,2,3,4,5]
+
+for item in seq:
+    print(item)
+
+for item in seq:
+    print('Yep')
+
+for jelly in seq:
+    print(jelly+jelly)
+
