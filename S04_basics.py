@@ -213,3 +213,4 @@ print(f'items in dict: {d.items()}')
 lst = [1,2,3]
 print(f'pop last item from list {lst} does this: {lst.pop()}')
 print(f"'x' in ['x','y','z'] gives this: {'x' in ['x','y','z']}")
+
