@@ -27,3 +27,15 @@ print(f'create array with start stop endnumber:\n {np.linspace(0, 5, 10)}')
 
 # identity matrix
 print(f'identity matrix linear algebra:\n{np.eye(4)}')
+
+# random number gen universally distributed between 0 and 1
+print(f'random numbers: {np.random.rand(5)}')
+print(f'random matrix: {np.random.rand(5)}')
+
+# random gaussian distribution
+print(f'random numbers gaussian dist: {np.random.randn(2)}')
+print(f'random matrix gaussian dist {np.random.randn(4,4)}')
+
+# random integer in a range (low, high, size)
+print(f'10 random integers between 1 and 99 {np.random.randint(1,100,10)}')
+
