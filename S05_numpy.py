@@ -39,3 +39,15 @@ print(f'random matrix gaussian dist {np.random.randn(4,4)}')
 # random integer in a range (low, high, size)
 print(f'10 random integers between 1 and 99 {np.random.randint(1,100,10)}')
 
+# reshape a list into a matrix
+arr = np.arange(25)
+ranarr = np.random.randint(0,50,10)
+print(f'array into a 5x5 matrix:\n {arr.reshape(5,5)}')
+
+# finding max and min of the array using numpy
+print(f'random array of 10 ints: {ranarr}')
+print(f'max random int in ranarr: {ranarr.max()}')
+print(f'index value of max random int: {ranarr.argmax()}')
+print(f'min random int in ranarr: {ranarr.min()}')
+print(f'index value of min random int: {ranarr.argmin()}')
+
