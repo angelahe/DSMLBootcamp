@@ -51,3 +51,10 @@ print(f'index value of max random int: {ranarr.argmax()}')
 print(f'min random int in ranarr: {ranarr.min()}')
 print(f'index value of min random int: {ranarr.argmin()}')
 
+# shape of a vector
+print(f'shape of arr: {arr.shape}')
+arr = arr.reshape(5,5)
+print(f'shape of arr after reshape: {arr.shape}')
+
+# type of array
+print(f'type of arr: {arr.dtype}')
