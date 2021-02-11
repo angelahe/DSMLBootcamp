@@ -210,7 +210,19 @@ print(f"split on # of {tweet} is {tweet.split('#')}")
 d = {'key1': 'item1', 'key2': 'item2'}
 print(f'keys in dict: {d.keys()}')
 print(f'items in dict: {d.items()}')
-lst = [1,2,3]
+lst = [1,2,3,4,5]
 print(f'pop last item from list {lst} does this: {lst.pop()}')
 print(f"'x' in ['x','y','z'] gives this: {'x' in ['x','y','z']}")
+print(f'pop 2nd in the list {lst} {lst.pop(2)}')
 
+print(f"x in list: {'x' in ['x', 'y', 'z']}")
+
+# tuple unpacking
+x = [(1,2),(3,4),(5,6)]
+print('this will print the tuples')
+for item in x:
+    print(item)
+print('this unpacks the tuples as I go along:')
+for (a,b) in x:
+    print(a)
+    print(b)
