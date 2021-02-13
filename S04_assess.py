@@ -21,3 +21,17 @@ print(f'getting hello from the list: {lst[3][1][2][0]}')
 d = {'k1':[1,2,3,{'tricky':['oh','man','inception',{'target':[1,2,3,'hello']}]}]}
 print(f"get hello again: {d['k1'][3]['tricky'][3]['target'][3]}")
 
+# difference between a list and a tuple
+# a tuple is immutable
+
+# function that grabs an email domain from an email address
+def getDomain(email):
+    return email.split('@')[-1]
+
+domain = getDomain('user@domain.com')
+print(f'domain in user@domain.com is {domain}')
+
+def findDog(st):
+    return 'dog' in st.lower().split()
+
+print(f"find dog in phrase is there a dog here: {findDog('Is there a dog here?')}")
