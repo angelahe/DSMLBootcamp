@@ -38,3 +38,15 @@ print(f'index 1 row: {arr_2d[1]}')
 
 # Getting individual element value
 print(f'get 2nd row 1st element: {arr_2d[1][0]}')
+
+# Format is arr_2d[row][col] or arr_2d[row,col]
+# Getting individual element value
+print(f'getting 2nd row 1st element: {arr_2d[1][0]}')
+print(f'getting 2nd row 1st element: {arr_2d[1,0]}')
+
+#2d array slicing
+print(f'top right corner of array: \n{arr_2d[:2,1:]}')
+
+#bottom row
+print(f'bottom row: {arr_2d[2]}')
+print(f'bottom row: {arr_2d[2,:]}')
