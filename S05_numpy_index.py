@@ -42,11 +42,29 @@ print(f'get 2nd row 1st element: {arr_2d[1][0]}')
 # Format is arr_2d[row][col] or arr_2d[row,col]
 # Getting individual element value
 print(f'getting 2nd row 1st element: {arr_2d[1][0]}')
+# same way of getting element
 print(f'getting 2nd row 1st element: {arr_2d[1,0]}')
 
-#2d array slicing
+# 2d array slicing
 print(f'top right corner of array: \n{arr_2d[:2,1:]}')
 
-#bottom row
+# bottom row
 print(f'bottom row: {arr_2d[2]}')
 print(f'bottom row: {arr_2d[2,:]}')
+
+# fancy indexing - to select rows or columns out of order
+#Set up matrix
+arr2d = np.zeros((10,10))
+
+#Length of array
+arr_length = arr2d.shape[1]
+
+#Set up array
+for i in range(arr_length):
+    arr2d[i] = i
+
+print(f'arr2d is: {arr2d}')
+
+print(f'get rows 2, 4, 6, 8: {arr2d[[2,4,6,8]]}')
+
+print(f'get rows in any order: {arr2d[[6,4,2,7]]}')
