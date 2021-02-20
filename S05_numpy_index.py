@@ -68,3 +68,16 @@ print(f'arr2d is: {arr2d}')
 print(f'get rows 2, 4, 6, 8: {arr2d[[2,4,6,8]]}')
 
 print(f'get rows in any order: {arr2d[[6,4,2,7]]}')
+
+# selections using brackets
+arr = np.arange(1,11)
+print(f'array 1 to 10: {arr}')
+
+print(f'arr > 4 is: {arr > 4}')
+bool_arr = arr > 4
+
+print(f'getting just the values > 4: {arr[bool_arr]}')
+
+print(f'just the values > 2: {arr[arr>2]}')
+x = 3
+print(f'values > x: {arr[arr>x]}')
