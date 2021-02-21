@@ -81,3 +81,7 @@ print(f'getting just the values > 4: {arr[bool_arr]}')
 print(f'just the values > 2: {arr[arr>2]}')
 x = 3
 print(f'values > x: {arr[arr>x]}')
+
+arr_2d = np.arange(50).reshape(5,10)
+print(f'5x10 array:\n{arr_2d}')
+print(f'get 13, 14, 23, 24 using slice:\n{arr_2d[1:3, 3:5]}')
