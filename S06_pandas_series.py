@@ -22,3 +22,9 @@ print(f'series using dictionary:\n{pd.Series(d)}')
 print(f'series on string datatype:\n{pd.Series(labels)}')
 print(f'series on functions:\n{pd.Series([sum, print, len])}')
 
+# using index in series works similar to a dictionary
+ser1 = pd.Series([1,2,3,4],index = ['USA', 'Germany','USSR', 'Japan'])
+ser2 = pd.Series([1,2,5,4],index = ['USA', 'Germany','Italy', 'Japan'])
+
+print(f"series 1 USA key value:{ser1['USA']}")
+print(f"series 1 + series 2: {ser1 + ser2}")
