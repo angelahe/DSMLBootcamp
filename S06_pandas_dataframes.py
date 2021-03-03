@@ -39,3 +39,13 @@ print(f"select row 3 by index:\n{df.iloc[2]}")
 # select subset of rows and columns
 print(f"one element at B Y: {df.loc['B', 'Y']}")
 print(f"slice of elements rows AB, columns WY: {df.loc[['A','B'],['W','Y']]}")
+
+# conditional selection of dataframes similar to numpy
+print(f'dataframe is :\n{df}')
+print(f'dataframe > 0:\n{df > 0}')
+
+booldf = df > 0
+
+print(f'value with null where condition not true df > 0:\n{df[booldf]}')
+
+print(f'one step apply condition:\n{df[df>0]}')
