@@ -51,8 +51,20 @@ print(f'value with null where condition not true df > 0:\n{df[booldf]}')
 print(f'one step apply condition:\n{df[df>0]}')
 
 print(f"{df[df['W']>0]}")
+# two step is:
+resultdf = df[df['W']>0]
+print(f"{resultdf['Y']}")
+# one step is:
 print(f"{df[df['W']>0]['Y']}")
+print(f"{df[df['Z']<0]}")
 print(f"{df[df['W']>0]}")
 print(f"{df[df['W']>0]['Y']}")
+# mult steps:
+boolser = df['W']>0
+result = df[boolser]
+mycols = ['Y', 'X']
+print(f"{result[mycols]}")
+# one step
 print(f"{df[df['W']>0][['Y','X']]}")
+
 print(f"{df[(df['W']>0) & (df['Y'] > 1)]}")
