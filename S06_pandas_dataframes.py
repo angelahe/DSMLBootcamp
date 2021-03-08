@@ -87,3 +87,30 @@ print(f"new column added to dataframe called states:\n{df}")
 
 # must do inplace=True for this change to be permanent
 print(f"set states to be index:\n{df.set_index('States')}")
+
+# multi-index and index hierarchy
+# Index Levels
+outside = ['G1','G1','G1','G2','G2','G2']
+inside = [1,2,3,1,2,3]
+# make list of tuple pairs
+hier_index = list(zip(outside,inside))
+print(f"tuple pairs:\n{hier_index}")
+hier_index = pd.MultiIndex.from_tuples(hier_index)
+print(f"multi-level labels:\n{hier_index}")
+
+df = pd.DataFrame(np.random.randn(6,2),index=hier_index,columns=['A','B'])
+print(f"dataframe is now:\n{df}")
+
+print(f"get G1 sub-dataframe:\n{df.loc['G1']}")
+
+# do outside to inside index (in order)
+print(f"get first row of sub-dataframe:\n{df.loc['G1'].loc[1]}")
+
+# give indexes names
+print(f'names of indexes before you name them: {df.index.names}')
+
+df.index.names = ['Groups', 'Num']
+print(f'dataframe with index names:\n{df}')
+
+print(f"get G2 row 2 column B element:\n{df.loc['G2'].loc[2]['B']}")
+print(f"get G1 row 3 column A element:\n{df.loc['G1'].loc[3]['A']}")
