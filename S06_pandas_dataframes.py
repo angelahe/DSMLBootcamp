@@ -67,4 +67,9 @@ print(f"{result[mycols]}")
 # one step
 print(f"{df[df['W']>0][['Y','X']]}")
 
+# multiple conditions with and (&)
 print(f"{df[(df['W']>0) & (df['Y'] > 1)]}")
+
+# multiple conditions with or (|)
+print(f"{df[(df['W']>0) | (df['Y'] > 1)]}")
+
