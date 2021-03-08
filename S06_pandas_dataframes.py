@@ -73,3 +73,17 @@ print(f"{df[(df['W']>0) & (df['Y'] > 1)]}")
 # multiple conditions with or (|)
 print(f"{df[(df['W']>0) | (df['Y'] > 1)]}")
 
+# reset index
+print(f"reset index:\n{df.reset_index()}")
+# to do permanently:
+# print(f"reset index:\n{df.reset_index(inplace=True)}")
+
+newindex = 'CA NY WY OR CO'.split()
+print(f"index list is: {newindex}")
+
+df['States'] = newindex
+
+print(f"new column added to dataframe called states:\n{df}")
+
+# must do inplace=True for this change to be permanent
+print(f"set states to be index:\n{df.set_index('States')}")
