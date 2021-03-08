@@ -114,3 +114,9 @@ print(f'dataframe with index names:\n{df}')
 
 print(f"get G2 row 2 column B element:\n{df.loc['G2'].loc[2]['B']}")
 print(f"get G1 row 3 column A element:\n{df.loc['G1'].loc[3]['A']}")
+
+# cross section for selection (alternate way)
+print(f"grab G1:\n{df.xs('G1')}")
+print(f"grab row 1 in G1:\n{df.xs('G1', 1)}")
+
+print(f"grab all Num=1 rows:\n{df.xs(1,level='Num')}")
