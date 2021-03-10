@@ -55,3 +55,17 @@ print(f"merge left and right by outer join on key1 and key2:\n{pd.merge(left, ri
 print(f"merge left and right by right join on key1 and key2:\n{pd.merge(left, right, how='right', on=['key1', 'key2'])} ")
 
 print(f"merge left and right by left join on key1 and key2:\n{pd.merge(left, right, how='left', on=['key1', 'key2'])}")
+
+# join - on keys in index instead of on columns
+
+left = pd.DataFrame({'A': ['A0', 'A1', 'A2'],
+                     'B': ['B0', 'B1', 'B2']},
+                    index=['K0', 'K1', 'K2'])
+
+right = pd.DataFrame({'C': ['C0', 'C2', 'C3'],
+                      'D': ['D0', 'D2', 'D3']},
+                     index=['K0', 'K2', 'K3'])
+
+print(f"left dataframe:\n{left}right dataframe:\n{right}")
+print(f"left join right w inner join:\n{left.join(right)}")
+print(f"left join right w outer join:\n{left.join(right, how='outer')}")
